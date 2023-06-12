@@ -50,7 +50,7 @@ We can compare this diagram with that of a conspiracy theorist who is a dedicate
 # How to Use
 To use this program, you need to create a JSON file named "settings.json" which should include a "ClientId" and "ClientSecret." It is your responsibility to obtain these credentials from the Reddit API (please note that recent changes by Reddit may impact API availability i.e. these lunatic changes to the pricing).
 
-To register a new app and acquire the necessary credentials, please visit: Reddit Apps page
+To register a new app and acquire the necessary credentials, please visit: [Reddit Apps page](https://www.reddit.com/prefs/apps)
 
 Furthermore, you need to set up the list of users to retrieve data from. Here's an example of how to structure the code:
 
