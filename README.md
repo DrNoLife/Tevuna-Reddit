@@ -1,16 +1,15 @@
-# Reddit User Analyser
+# Reddit User Analyzer
+This repository contains a quick and dirty notebook designed for quickly analyzing someone's Reddit profile.
 
-Small, quick, and dirty Notebook for quickly analyzing someone's Reddit profile. 
+The primary goal of this project is to retrieve as many comments and posts as possible from a user's Reddit account, enabling us to gain insights into their online persona. By examining the subreddits where they are active, as well as the breakdown of their posts versus comments, we can make informed judgments about whether engaging with them is worthwhile.
 
-What we're doing is basically retrieve as many comments and posts as we can, so that we can see what kind of person the user is. We can see where they post / comment, and a breakdown of how many posts vs comments they usually do. It's a good way of figuring out, if someone is worth your time on Reddit.
-
-When running the program, we're generating a ```json``` file for the user, that contains all subreddits they've been active in (for the last 1000 comments and posts). Then we take the top 10 most active subreddits and we create a diagram out of it.
+Running the Program
+When you run the program, it generates a JSON file for the specified user, containing their activity in various subreddits based on their last 1000 comments and posts. The top 10 most active subreddits are then visualized using diagrams.
 
 # Examples
+To demonstrate the program's functionality, we provide two examples of running it: one using my Reddit profile, and the other using a profile of a dedicated Trump conspiracy theorist.
 
-I'll be providing 2 examples of running the program. The first will be me, the second a crazy Trump conspiracy theorist.
-
-First off, here's part of the json that get's generated for me:
+Firstly, here's a portion of the JSON generated for my profile:
 
 ```json
 {
@@ -40,32 +39,28 @@ First off, here's part of the json that get's generated for me:
   }
 }
 ```
+These data points are then transformed into a diagram representing my user activity, which clearly indicates my most active subreddit is "Genshin_Impact," where I primarily comment rather than post.
 
-All of this then gets parsed into a diagram, that looks like this:
+![Diagram over my activity](./docs/IAmdrnolife.png)
 
-![Diagram over the user u/IAmDrNoLife](./docs/IAmdrnolife.png)
-
-Quite obvious where I'm most active, which is clearly Genshin, however I basically don't ever posts in there. I only really comment.
-
-We can then compare that diagram with the one of a conspiracy theorist:
+We can compare this diagram with that of a conspiracy theorist who is a dedicated Trump supporter:
 
 ![Diagram over a Trumpist conspiracy theorist](./docs/Allan_QuartermainSr.png)
 
-# How to use
+# How to Use
+To use this program, you need to create a JSON file named "settings.json" which should include a "ClientId" and "ClientSecret." It is your responsibility to obtain these credentials from the Reddit API (please note that recent changes by Reddit may impact API availability i.e. these lunatic changes to the pricing).
 
-You need to create a json file named ```settings.json``` which should contain a ```ClientId``` and a ```ClientSecret``` which should be your responsibility to get, from the Reddit API (maybe rip soon, due to the lunatic changes Reddit are doing right now...).
+To register a new app and acquire the necessary credentials, please visit: Reddit Apps page
 
-You can register a new app here: https://www.reddit.com/prefs/apps
-
-Furthermore, you also need to setup the list of users to retrieve. Here's a code example of it:
+Furthermore, you need to set up the list of users to retrieve data from. Here's an example of how to structure the code:
 
 ```python
 list_of_users = [
-    ("I-melted", UserType.Random), 
+    ("I-melted", UserType.Random),
     ("TheAvatar99", UserType.Chad),
-    ("krnnz", UserType.Autism), 
-    ("Its_Cmac", UserType.Autism), 
-    ("WideEstablishment578", UserType.Boomer), 
+    ("krnnz", UserType.Autism),
+    ("Its_Cmac", UserType.Autism),
+    ("WideEstablishment578", UserType.Boomer),
     ("IAmdrnolife", UserType.Me),
     ("relxp", UserType.Autism),
     ("bad_apiarist", UserType.Autism),
@@ -73,7 +68,8 @@ list_of_users = [
     ("zerowo_", UserType.Chad),
 ]
 ```
+Please follow the same structure: an array of tuples where the first element is the username and the last element is the UserType.
 
-Just follow the same structure. An array of tuples, where the first element is the name of the user, and the last is the UserType.
+Note: The UserType functionality has been temporarily modified due to an unforeseen issue. We may revert to an array of UserTypes in the future. For now, please use the provided structure.
 
-ps.. I thought I had made it so the last item was an array of UserTypes... But I can see that for some reason has been reverted (before I switched voer to Git)... Soooe, idk. I might change that back again in the future, but eh, for now we've got this.
+Feel free to explore the code and adapt it to your specific requirements. We hope you find this Reddit User Analyzer useful for gaining insights into Reddit users' activity and interests.
