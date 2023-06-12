@@ -3,7 +3,7 @@ This repository contains a quick and dirty notebook designed for quickly analyzi
 
 The primary goal of this project is to retrieve as many comments and posts as possible from a user's Reddit account, enabling us to gain insights into their online persona. By examining the subreddits where they are active, as well as the breakdown of their posts versus comments, we can make informed judgments about whether engaging with them is worthwhile.
 
-Running the Program
+# Running the Program
 When you run the program, it generates a JSON file for the specified user, containing their activity in various subreddits based on their last 1000 comments and posts. The top 10 most active subreddits are then visualized using diagrams.
 
 # Examples
