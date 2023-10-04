@@ -1,0 +1,17 @@
+﻿@page "/"
+@using BlazorWASM.Components
+
+<FormComponent OnImageBytesReceived="HandleImageBytesReceived" />
+<ImageDisplayComponent ImageBytes="_imageBytes" />
+
+
+
+@code {
+    private byte[]? _imageBytes;
+
+    private void HandleImageBytesReceived(byte[] imageBytes)
+    {
+        _imageBytes = imageBytes;
+        StateHasChanged();
+    }
+}

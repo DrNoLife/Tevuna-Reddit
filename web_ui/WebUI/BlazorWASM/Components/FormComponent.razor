@@ -1,0 +1,19 @@
+﻿@using Microsoft.AspNetCore.Components.Forms
+
+
+<EditForm Model="@_analyseRequest" OnValidSubmit="@HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="form-group">
+        <InputText id="Username" @bind-Value="_analyseRequest.Username" type="text" class="form-control" placeholder="Reddit Username... " />
+        <ValidationMessage For="@(() => _analyseRequest.Username)" />
+    </div>
+
+    @if (_isWorking)
+    {
+        <h1>@_status</h1>
+    }
+
+    <button type="submit" class="btn btn-primary">Analyse</button>
+</EditForm>

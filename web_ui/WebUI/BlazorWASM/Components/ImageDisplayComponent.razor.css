@@ -1,0 +1,15 @@
+﻿
+.image-section {
+    margin-top: 100px;
+}
+
+.image-container {
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 100%;
+}

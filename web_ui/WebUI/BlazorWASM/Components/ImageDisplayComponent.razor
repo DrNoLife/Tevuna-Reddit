@@ -1,0 +1,19 @@
+﻿
+
+@if(ImageBytes is null) 
+{
+    <p>Nothing so far...</p>
+}
+else 
+{
+    <section class="image-section" id="image-section">
+        
+        @for(int i = _imageSources.Count - 1; i >= 0; i--)
+        {
+            <div class="image-container">
+                <img src="@_imageSources[i]" alt="User Image" />
+            </div>
+        }
+
+    </section>
+}

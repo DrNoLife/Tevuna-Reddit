@@ -1,0 +1,33 @@
+﻿.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    font-size: 2.5rem;
+}
+
+::deep input {
+    padding: 15px;
+    border: 1px solid var(--highlighting-color);
+    outline: none;
+    background-color: var(--secondary-bg-color);
+    color: var(--primary-font-color);
+    font-size: 1.6rem;
+}
+
+::deep input:active,
+::deep input:focus {
+    outline: none;
+}
+
+button[type="submit"] {
+    margin-top: 30px;
+    border: 1px solid var(--link-color-hover);
+    background-color: var(--link-color);
+    color: var(--link-font-color);
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 15px 55px;
+}
