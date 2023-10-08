@@ -5,10 +5,36 @@
     --secondary-bg-color: #11113f;
     --primary-font-color: #dbdbdb;
     --link-font-color: #fff;
+    --link-font-color-disabled: #818181;
     --link-color: #8639c1;
     --link-color-hover: #a74eec;
+    --link-color-disabled: #491b6d;
     --highlighting-color: #192f6d;
+    --highlighting-color-disabled: #6b2d9b;
+    --error-font-color: #cb3a3a;
 }
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: var(--primary-bg-color) var(--highlighting-color);
+}
+
+    /* Chrome, Edge, and Safari */
+    *::-webkit-scrollbar {
+        width: 3px;
+    }
+
+    *::-webkit-scrollbar-track {
+        background: var(--primary-bg-color);
+    }
+
+    *::-webkit-scrollbar-thumb {
+        background-color: var(--highlighting-color);
+        border-radius: 2px;
+        border: 0px none #ffffff;
+    }
 
 body {
     background-color: var(--primary-bg-color);
@@ -22,7 +48,8 @@ body {
     box-sizing: border-box;
 }
 
-body > main {
+body #app,
+body #app > main {
     flex: 1;
     display: flex;
     flex-direction: column;

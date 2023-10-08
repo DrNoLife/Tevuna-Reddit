@@ -1,17 +1,20 @@
 ﻿
 
-@if(ImageBytes is null) 
+@if(AnalyzedUsers is not null) 
 {
-    <p>Nothing so far...</p>
-}
-else 
-{
+    <PageTitle>Analyzed, @AnalyzedUsers[AnalyzedUsers.Count - 1].Username</PageTitle>
+
     <section class="image-section" id="image-section">
-        
-        @for(int i = _imageSources.Count - 1; i >= 0; i--)
+
+        @for (int i = AnalyzedUsers.Count - 1; i >= 0; i--)
         {
-            <div class="image-container">
-                <img src="@_imageSources[i]" alt="User Image" />
+            <div>
+                <div class="image-title">
+                    <p>u/@AnalyzedUsers[i].Username</p>
+                </div>
+                <div class="image-container">
+                    <img src="@AnalyzedUsers[i].GetImageUrl()" alt="User Image" />
+                </div>
             </div>
         }
 

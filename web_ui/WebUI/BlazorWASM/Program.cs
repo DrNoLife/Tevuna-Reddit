@@ -8,12 +8,20 @@ var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.RootComponents.Add<App>("#app");
 builder.RootComponents.Add<HeadOutlet>("head::after");
 
-builder.Services.AddHttpClient("RUA-Api", client =>
-{
-    client.BaseAddress = new Uri("http://localhost:5000/");
-});
+ConfigureServices(builder.Services, builder.HostEnvironment.BaseAddress);
 
-builder.Services.AddScoped<IBaseService, BaseService>();
-builder.Services.AddScoped<IAnalyserService, AnalyserService>();
+static void ConfigureServices(IServiceCollection services, string baseAddress)
+{
+    services.AddHttpClient("RUA-Api", client =>
+    {
+        client.BaseAddress = new Uri("http://localhost:5000/");
+    });
+
+    services.AddScoped<IBaseService, BaseService>();
+    services.AddScoped<IAnalyserService, AnalyserService>();
+    services.AddSingleton<IStateService, StateService>();
+}
+
+
 
 await builder.Build().RunAsync();

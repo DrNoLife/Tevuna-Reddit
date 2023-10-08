@@ -1,19 +1,42 @@
-﻿@using Microsoft.AspNetCore.Components.Forms
+﻿@using BlazorWASM.Helpers;
+@using Microsoft.AspNetCore.Components.Forms
 
+<PageTitle>Reddit User Analyzer</PageTitle>
 
-<EditForm Model="@_analyseRequest" OnValidSubmit="@HandleValidSubmit">
-    <DataAnnotationsValidator />
-    <ValidationSummary />
+<section class="form-section @(!HasSearchedBefore ? "first-time" : String.Empty)">
 
-    <div class="form-group">
-        <InputText id="Username" @bind-Value="_analyseRequest.Username" type="text" class="form-control" placeholder="Reddit Username... " />
-        <ValidationMessage For="@(() => _analyseRequest.Username)" />
+    <EditForm Model="@_analyseRequest" OnValidSubmit="@HandleValidSubmit">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+
+        <div class="form-group">
+            <InputText id="Username" autocomplete="off" @bind-Value="_analyseRequest.Username" type="text" class="form-control" placeholder="Reddit Username... " />
+            <ValidationMessage For="@(() => _analyseRequest.Username)" />
+        </div>
+
+        @if(!_isWorking)
+        {
+            <button type="submit" class="btn btn-primary">Analyse</button>
+        }
+        else
+        {
+            <button disabled type="submit" class="btn btn-primary">Analyse</button>
+        }
+
+    </EditForm>
+</section>
+
+@if(_errorHappened)
+{
+    <div class="error-message-container">
+        <p>@_errorMessage</p>
     </div>
+}
 
-    @if (_isWorking)
-    {
-        <h1>@_status</h1>
-    }
-
-    <button type="submit" class="btn btn-primary">Analyse</button>
-</EditForm>
+<StatusComponent 
+    @ref="_statusComponent"
+    PrimaryStatusText="@_status"
+    StatusMessages="_statusMessages"
+    CompactMode="HasSearchedBefore"
+    DisplayComponent="_showStatusComponent"
+    DisplayLoadingStatus="true"/>
