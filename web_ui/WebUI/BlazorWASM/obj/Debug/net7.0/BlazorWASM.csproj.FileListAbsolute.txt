@@ -26,6 +26,7 @@ E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\ww
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\wwwroot\_framework\Microsoft.Extensions.FileProviders.Abstractions.dll
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\wwwroot\_framework\Microsoft.Extensions.FileProviders.Physical.dll
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\wwwroot\_framework\Microsoft.Extensions.FileSystemGlobbing.dll
+E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\wwwroot\_framework\Microsoft.Extensions.Http.dll
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\wwwroot\_framework\Microsoft.Extensions.Logging.Abstractions.dll
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\wwwroot\_framework\Microsoft.Extensions.Logging.dll
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\wwwroot\_framework\Microsoft.Extensions.Options.dll
@@ -351,6 +352,7 @@ E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\ww
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\wwwroot\_framework\System.IO.Pipes.dll.gz
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\wwwroot\_framework\Microsoft.Extensions.Primitives.dll.gz
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\wwwroot\_framework\System.IO.FileSystem.Watcher.dll.gz
+E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\wwwroot\_framework\Microsoft.Extensions.Http.dll.gz
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\wwwroot\_framework\System.Net.WebSockets.Client.dll.gz
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\wwwroot\_framework\System.Security.Cryptography.Primitives.dll.gz
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\wwwroot\_framework\System.ServiceProcess.dll.gz
@@ -420,6 +422,7 @@ E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\Mi
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\Microsoft.Extensions.FileProviders.Abstractions.dll
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\Microsoft.Extensions.FileProviders.Physical.dll
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\Microsoft.Extensions.FileSystemGlobbing.dll
+E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\Microsoft.Extensions.Http.dll
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\Microsoft.Extensions.Logging.dll
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\Microsoft.Extensions.Logging.Abstractions.dll
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
@@ -624,6 +627,7 @@ E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\obj\Debug\net7.0\bu
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\obj\Debug\net7.0\build-gz\LER++1fP.gz
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\obj\Debug\net7.0\build-gz\MjK9ZuoG.gz
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\obj\Debug\net7.0\build-gz\1UGqRNm3.gz
+E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\obj\Debug\net7.0\build-gz\RIEcm02K.gz
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\obj\Debug\net7.0\build-gz\xy9D1I+W.gz
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\obj\Debug\net7.0\build-gz\AwKJd4mi.gz
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\obj\Debug\net7.0\build-gz\0YTSVBsu.gz
@@ -817,17 +821,13 @@ E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\obj\Debug\net7.0\st
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\obj\Debug\net7.0\staticwebassets.pack.json
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\obj\Debug\net7.0\staticwebassets.build.json
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\obj\Debug\net7.0\staticwebassets.development.json
+E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\obj\Debug\net7.0\scopedcss\Components\FormComponent.razor.rz.scp.css
+E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\obj\Debug\net7.0\scopedcss\Components\ImageDisplayComponent.razor.rz.scp.css
+E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\obj\Debug\net7.0\scopedcss\Pages\Index.razor.rz.scp.css
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\obj\Debug\net7.0\scopedcss\bundle\BlazorWASM.styles.css
+E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\obj\Debug\net7.0\scopedcss\projectbundle\BlazorWASM.bundle.scp.css
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\obj\Debug\net7.0\BlazorWASM.csproj.CopyComplete
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\obj\Debug\net7.0\BlazorWASM.dll
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\obj\Debug\net7.0\refint\BlazorWASM.dll
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\obj\Debug\net7.0\BlazorWASM.pdb
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\obj\Debug\net7.0\ref\BlazorWASM.dll
-E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\obj\Debug\net7.0\scopedcss\Pages\Index.razor.rz.scp.css
-E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\obj\Debug\net7.0\scopedcss\projectbundle\BlazorWASM.bundle.scp.css
-E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\wwwroot\_framework\Microsoft.Extensions.Http.dll
-E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\wwwroot\_framework\Microsoft.Extensions.Http.dll.gz
-E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\Microsoft.Extensions.Http.dll
-E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\obj\Debug\net7.0\build-gz\RIEcm02K.gz
-E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\obj\Debug\net7.0\scopedcss\Components\FormComponent.razor.rz.scp.css
-E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\obj\Debug\net7.0\scopedcss\Components\ImageDisplayComponent.razor.rz.scp.css

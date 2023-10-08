@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Components;
 using Microsoft.JSInterop;
+using System.Linq;
 
 namespace BlazorWASM.Components;
 
@@ -19,9 +20,15 @@ public partial class ImageDisplayComponent
             ? $"data:image/png;base64,{Convert.ToBase64String(ImageBytes)}" 
             : String.Empty;
 
-        _imageSources.Add(imageSource);
-
-        await ScrollToElement("image-section");
+        if(!String.IsNullOrEmpty(imageSource))
+        {
+            if(!_imageSources.Any(x => x.Equals(imageSource)))
+            {
+                _imageSources.Add(imageSource);
+            }
+            
+            await ScrollToElement("image-section");
+        }
     }
 
     private ValueTask ScrollToElement(string elementId)

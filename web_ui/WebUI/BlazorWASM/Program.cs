@@ -10,7 +10,7 @@ builder.RootComponents.Add<HeadOutlet>("head::after");
 
 builder.Services.AddHttpClient("RUA-Api", client =>
 {
-    client.BaseAddress = new Uri("http://127.0.0.1/");
+    client.BaseAddress = new Uri("http://localhost:5000/");
 });
 
 builder.Services.AddScoped<IBaseService, BaseService>();
