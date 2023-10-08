@@ -96,3 +96,11 @@ h1:focus {
     .blazor-error-boundary::after {
         content: "An error has occurred."
     }
+
+
+/* Smartphones (portrait) */
+@media only screen and (max-width : 400px) {
+    body {
+        padding: 5px;
+    }
+}

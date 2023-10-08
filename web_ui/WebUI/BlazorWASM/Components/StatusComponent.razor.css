@@ -48,3 +48,19 @@
 #loop-started {
     animation: scale 3s infinite ease-in-out;
 }
+
+/* Smartphones (portrait) */
+@media only screen and (max-width : 400px) {
+    .message-container {
+        flex: none;
+    }
+
+    .message-container .image-container {
+        width: 150px;
+    }
+
+    .message {
+        font-size: 1.8em;
+        text-align: center;
+    }
+}

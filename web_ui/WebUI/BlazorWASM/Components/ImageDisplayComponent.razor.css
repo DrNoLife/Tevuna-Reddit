@@ -23,3 +23,20 @@
     font-size: 1.8rem;
     margin-bottom: 10px;
 }
+
+/* Smartphones (portrait) */
+@media only screen and (max-width : 400px) {
+    .image-section {
+        margin-top: 25px;
+        gap: 25px;
+    }
+
+    section > div {
+        padding: 10px;
+    }
+
+    section > div:nth-child(even) {
+        background-color: var(--secondary-bg-color);
+        border-radius: 10px;
+    }
+}
