@@ -15,5 +15,6 @@ builder.Services.AddHttpClient("RUA-Api", client =>
 
 builder.Services.AddScoped<IBaseService, BaseService>();
 builder.Services.AddScoped<IAnalyserService, AnalyserService>();
+builder.Services.AddSingleton<IStateService, StateService>();
 
 await builder.Build().RunAsync();

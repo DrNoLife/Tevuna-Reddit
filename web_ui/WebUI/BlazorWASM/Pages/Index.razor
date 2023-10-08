@@ -1,17 +1,21 @@
 ﻿@page "/"
 @using BlazorWASM.Components
+@using BlazorWASM.Models;
 
 <FormComponent OnImageBytesReceived="HandleImageBytesReceived" />
-<ImageDisplayComponent ImageBytes="_imageBytes" />
-
-
+<ImageDisplayComponent AnalyzedUsers="_users" />
 
 @code {
-    private byte[]? _imageBytes;
+    private List<AnalyzedUser?>? _users = null;
 
-    private void HandleImageBytesReceived(byte[] imageBytes)
+    private void HandleImageBytesReceived(AnalyzedUser user)
     {
-        _imageBytes = imageBytes;
+        if(_users is null)
+        {
+            _users = new();
+        }
+
+        _users.Add(user);
         StateHasChanged();
     }
 }

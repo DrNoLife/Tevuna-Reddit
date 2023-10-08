@@ -3,7 +3,6 @@ E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\ww
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\wwwroot\_framework\BlazorWASM.dll
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\wwwroot\_framework\BlazorWASM.pdb
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\wwwroot\_framework\dotnet.7.0.10.brnhv1ujmu.js
-E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\wwwroot\_framework\dotnet.timezones.blat
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\wwwroot\_framework\dotnet.wasm
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\wwwroot\_framework\icudt.dat
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\wwwroot\_framework\icudt_CJK.dat
@@ -243,7 +242,6 @@ E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\ww
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\wwwroot\_framework\System.Security.Cryptography.dll.gz
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\wwwroot\_framework\Microsoft.Extensions.Logging.Abstractions.dll.gz
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\wwwroot\_framework\System.Linq.Expressions.dll.gz
-E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\wwwroot\_framework\dotnet.timezones.blat.gz
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\wwwroot\_framework\Microsoft.Extensions.Configuration.FileExtensions.dll.gz
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\wwwroot\_framework\blazor.webassembly.js.gz
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\wwwroot\_framework\System.Xml.XmlSerializer.dll.gz
@@ -599,7 +597,6 @@ E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\ms
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\netstandard.dll
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\System.Private.CoreLib.dll
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\dotnet.js
-E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\dotnet.timezones.blat
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\dotnet.wasm
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\icudt.dat
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\icudt_CJK.dat
@@ -804,7 +801,6 @@ E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\obj\Debug\net7.0\bu
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\obj\Debug\net7.0\build-gz\HmpReSqb.gz
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\obj\Debug\net7.0\build-gz\DZFzCUVx.gz
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\obj\Debug\net7.0\build-gz\+RtF1DPS.gz
-E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\obj\Debug\net7.0\build-gz\b00DhKfR.gz
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\obj\Debug\net7.0\build-gz\+i45aQYe.gz
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\obj\Debug\net7.0\build-gz\dKrsauKr.gz
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\obj\Debug\net7.0\build-gz\UQttbWED.gz
@@ -831,3 +827,6 @@ E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\obj\Debug\net7.0\Bl
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\obj\Debug\net7.0\refint\BlazorWASM.dll
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\obj\Debug\net7.0\BlazorWASM.pdb
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\obj\Debug\net7.0\ref\BlazorWASM.dll
+E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\wwwroot\images\hu_tao_information.png
+E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\obj\Debug\net7.0\scopedcss\Components\StatusComponent.razor.rz.scp.css
+E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\wwwroot\images\hu_tao_gotcha.png

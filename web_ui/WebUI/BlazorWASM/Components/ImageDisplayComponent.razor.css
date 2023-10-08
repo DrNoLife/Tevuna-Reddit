@@ -1,15 +1,25 @@
 ﻿
 .image-section {
     margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
 }
 
 .image-container {
     max-width: 100%;
     width: 100%;
     box-sizing: border-box;
+    border-radius: 10px;
 }
 
-.image-container img {
-    width: 100%;
-    max-width: 100%;
+    .image-container img {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
+.image-title {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
 }

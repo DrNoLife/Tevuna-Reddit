@@ -1,0 +1,36 @@
+﻿@if (DisplayComponent)
+{
+    @if (CompactMode)
+    {
+        <div class="message-container">
+
+            <div class="message">
+                <p>@_currentMessage</p>
+            </div>
+
+        </div>
+    }
+    else
+    {
+        <div class="message-container">
+
+            @if (_loopStarted)
+            {
+                <div class="image-container" id="loop-started">
+                    <img alt="Hu Tao, providing you with information!" src="images/hu_tao_information.png" />
+                </div>
+            }
+            else
+            {
+                <div class="image-container" id="skew-image">
+                    <img alt="Hu Tao, encouraging you to search!" src="images/hu_tao_gotcha.png" />
+                </div>
+            }
+
+            <div class="message">
+                <p>@_currentMessage</p>
+            </div>
+
+        </div>
+    }
+} 
