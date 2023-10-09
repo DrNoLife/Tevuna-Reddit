@@ -5,6 +5,25 @@ The primary goal of this project is to retrieve as many comments and posts as po
 
 The previous iteration of this repository was exclusively dedicated to the Jupyter Notebook implementation. All pertinent details regarding this version can be discovered within the README file located in the notebook directory.
 
+## Note!
+
+I am currently working on improving this software. Here's what I've planned:
+
+- Using GPT3.5Turbo to generate a **"bias report"** about the user.
+- Massive UI overhaul regarding the result section.
+
+The following image shows a basic **'wireframe'** regarding this new design.
+
+![Potential UI change](./docs/UI%20Change%20Wireframe.png)
+
+Left side shows a list of users **analyzed** for the current session.
+
+Right side shows a **"bias report"** about the current user.
+
+### BREAKING CHANGES
+
+Due to this new upgrade, the provided startup script is *currently not working*. I will update it as soon as the abovementioned features are implemented.
+
 ## Table of Contents
 * Features
 * Prerequisites
@@ -17,10 +36,12 @@ The previous iteration of this repository was exclusively dedicated to the Jupyt
 * **API**:
 
 Exposes endpoints to fetch and analyze Reddit user data.
+
 Located in the api folder.
 * **Web UI**:
 
 Provides a user-friendly interface to visualize user analysis.
+
 Located in the web_ui folder.
 
 ## Prerequisites

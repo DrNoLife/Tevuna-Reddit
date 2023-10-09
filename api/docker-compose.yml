@@ -1,9 +1,21 @@
 version: '3'
 
 services:
-  reddit-activity-api:
-    build: .
-    container_name: "reddit-user-analyzer"
+
+  reddit-activity-visual-api:
+    build: 
+      context: ./visual_api
+      dockerfile: Dockerfile
+    container_name: "rua-visual-api"
     ports:
-      - "5000:5000"
+      - "5000:80"
+    restart: unless-stopped
+
+  reddit-activity-analysis-api:
+    build:
+      context: ./bias_api
+      dockerfile: Dockerfile
+    container_name: "rua-bias-api"
+    ports:
+      - "5010:80"
     restart: unless-stopped
