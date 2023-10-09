@@ -50,7 +50,7 @@ public partial class FormComponent
         };
     }
 
-    private async void HandleValidSubmit()
+    private async Task HandleValidSubmit()
     {
         try
         {
@@ -61,8 +61,16 @@ public partial class FormComponent
             _status = "Retrieving comment and post history.";
             _statusComponent.StartMessageLoop(5000);
 
-            // Make request to API.
-            byte[]? imageBytes = await AnalyserService.AnalyseUserAsync(_analyseRequest);
+            // Start the tasks.
+            Task<byte[]?> imageTask = AnalyserService.GetVisualAnalysisAsync(_analyseRequest);
+            Task<BiasReport> reportTask = AnalyserService.GetBiasReportAsync(_analyseRequest);
+
+            // Await both tasks to complete.
+            await Task.WhenAll(imageTask, reportTask);
+
+            // Get the results.
+            byte[]? imageBytes = imageTask.Result;
+            BiasReport report = reportTask.Result;
 
             if (imageBytes is null)
             {
@@ -76,7 +84,7 @@ public partial class FormComponent
             _showStatusComponent = false;
 
             // Make invokation of the event.
-            AnalyzedUser user = new(_analyseRequest.Username, imageBytes);
+            AnalyzedUser user = new(_analyseRequest.Username, imageBytes, report);
             await OnImageBytesReceived.InvokeAsync(user);
         }
         catch(Exception)

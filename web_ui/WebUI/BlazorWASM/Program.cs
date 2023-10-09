@@ -12,9 +12,14 @@ ConfigureServices(builder.Services, builder.HostEnvironment.BaseAddress);
 
 static void ConfigureServices(IServiceCollection services, string baseAddress)
 {
-    services.AddHttpClient("RUA-Api", client =>
+    services.AddHttpClient("RUA-Visual", client =>
     {
         client.BaseAddress = new Uri("http://localhost:5000/");
+    });
+
+    services.AddHttpClient("RUA-Bias", client =>
+    {
+        client.BaseAddress = new Uri("http://localhost:5010/");
     });
 
     services.AddScoped<IBaseService, BaseService>();

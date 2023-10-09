@@ -6,17 +6,31 @@
 
     <section class="image-section" id="image-section">
 
-        @for (int i = AnalyzedUsers.Count - 1; i >= 0; i--)
-        {
-            <div>
-                <div class="image-title">
-                    <p>u/@AnalyzedUsers[i].Username</p>
+        <aside class="user-history">
+
+            @foreach (var user in GetAnalyzedUsersReversed())
+            {
+                <div title="u/@user.Username" class="user @(user == _selectedUser ? "active" : String.Empty)" @onclick="() => HandleUserClicked(user)">
+                    <p>u/@user.Username</p>
                 </div>
+            }
+
+        </aside>
+
+        <div class="content-container">
+
+            @if(_selectedUser is not null)
+            {
                 <div class="image-container">
-                    <img src="@AnalyzedUsers[i].GetImageUrl()" alt="User Image" />
+                    <img src="@_selectedUser.GetImageUrl()" alt="User Image" />
                 </div>
-            </div>
-        }
+
+                <article>
+                    <p>@_selectedUser.BiasReport.Analysis</p>
+                </article>
+            }
+
+        </div>
 
     </section>
 }
