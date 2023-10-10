@@ -3,6 +3,7 @@ Tevuna Reddit is an insightful tool designed to delve into the activities and be
 
 ## Table of Contents
 * [Features](#features)
+    + [Showcase](#showcase)
     + [APIs](#apis)
     + [Web UI](#web-ui)
 * [Previous Version](#previous-version)
@@ -25,6 +26,16 @@ Tevuna Reddit includes the following:
 * **Visual Representations**: Gain a clearer insight through visual graphs that encapsulate the user's Reddit activity.
 * **Bias Report Generation**: Utilize the OpenAI API to generate a bias report, providing a more nuanced understanding of the user's behavior and tendencies on Reddit.
 * **Web UI**: Use a clean and easy to understand web ui, that makes interacting with Tevuna Reddit a breeze.
+
+### Showcase
+
+The following video shows how to use the program. Starts out from the Web UI and shows searching and result. For a more full walkthrough, checkout the `docs` folder for a video showing how to use the startup script to run Tevuna Reddit.
+
+<video width="640" height="360" controls>
+  <source src="./docs/tevuna_showcase.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
 
 ### APIs
 
