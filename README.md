@@ -1,68 +1,89 @@
-# Reddit User Analyzer
-This repository contains a quick and dirty notebook designed for quickly analyzing someone's Reddit profile.
-
-The primary goal of this project is to retrieve as many comments and posts as possible from a user's Reddit account, enabling us to gain insights into their online persona. By examining the subreddits where they are active, as well as the breakdown of their posts versus comments, we can make informed judgments about whether engaging with them is worthwhile.
-
-The previous iteration of this repository was exclusively dedicated to the Jupyter Notebook implementation. All pertinent details regarding this version can be discovered within the README file located in the notebook directory.
-
-## Note!
-
-I am currently working on improving this software. Here's what I've planned:
-
-- Using GPT3.5Turbo to generate a **"bias report"** about the user.
-- Massive UI overhaul regarding the result section.
-
-The following image shows a basic **'wireframe'** regarding this new design.
-
-![Potential UI change](./docs/UI%20Change%20Wireframe.png)
-
-Left side shows a list of users **analyzed** for the current session.
-
-Right side shows a **"bias report"** about the current user.
-
-### BREAKING CHANGES
-
-Due to this new upgrade, the provided startup script is *currently not working*. I will update it as soon as the abovementioned features are implemented.
+# Tevuna Reddit
+Tevuna Reddit is an insightful tool designed to delve into the activities and behaviors of specific Reddit users. By harnessing the power of the Reddit API, it unveils a user's active subreddits alongside a detailed breakdown of their karma, comments, and posts, all represented in a comprehensive visual graph. Taking a step further, Tevuna Reddit integrates the OpenAI API to generate a "bias report" for the user, offering a deeper understanding of their inclinations and interactions on the platform.
 
 ## Table of Contents
-* Features
-* Prerequisites
-* Setup
-* Running the Program
-* Contributing
-* License
+* [Features](#features)
+    + [APIs](#apis)
+    + [Web UI](#web-ui)
+* [Previous Version](#previous-version)
+* [Prerequisites](#prerequisites)
+* [Setup](#setup)
+* [Running the Program](#running-the-program)
+    + [Using the Startup Script](#using-the-startup-script)
+    + [Using Docker Compose](#using-docker-compose)
+* [Usage](#usage)
+* [Stopping the program](#stopping-the-program)
+    + [Manual Shutdown](#manual-shutdown)
+    + [Automated Shutdown](#automated-shutdown)
+* [Contributing](#contributing)
+
 
 ## Features
-* **API**:
 
-Exposes endpoints to fetch and analyze Reddit user data.
+Tevuna Reddit includes the following:
 
-Located in the api folder.
-* **Web UI**:
+* **Visual Representations**: Gain a clearer insight through visual graphs that encapsulate the user's Reddit activity.
+* **Bias Report Generation**: Utilize the OpenAI API to generate a bias report, providing a more nuanced understanding of the user's behavior and tendencies on Reddit.
+* **Web UI**: Use a clean and easy to understand web ui, that makes interacting with Tevuna Reddit a breeze.
 
-Provides a user-friendly interface to visualize user analysis.
+### APIs
 
-Located in the web_ui folder.
+In Tevuna Reddit there are 2 APIs included. One for retrieving the graphical overview of a user, and one for retrieving the bias report. Here's an overview of each:
+
+* **Overview API**
+
+Exposes an endpoint to generate a visual overview of a Reddit user.
+
+Default port is: ```5000```
+
+Endpoint is ```get-user-activity``` and it expects a get parameter of ```username```.
+
+Example call: ```localhost:5000/get-user-activity?username=iamdrnolife```
+
+* **Bias Report API**
+
+Exposes an endpoint to generate a text-based bias report of a Reddit user.
+
+Default port is: ```5010```
+
+Endpoint is ```get-user-analysis``` and it expects a get parameter of ```username```.
+
+Example call: ```localhost:5010/get-user-analysis?username=iamdrnolife```
+
+### Web UI
+
+Tevuna Reddit also includes a Web UI that makes the program easy to interact with.
+
+It's written in C# using Blazor Wasm. It's located in the ```web_ui``` folder.
+
+## Previous Version
+The predecessor of this repository was solely focused on a Jupyter Notebook implementation. All relevant details regarding that version are preserved in the README file within the notebook directory, ensuring a seamless reference for those interested in the prior iteration.
 
 ## Prerequisites
-* Docker
-* Docker-compose
+* [Docker](https://docs.docker.com/get-docker/)
+* [Docker-compose](https://docs.docker.com/compose/install/)
 * Reddit ClientId and ClientSecret
+* OpenAI API Key
 
 To register a new app and acquire the necessary credentials, please visit: [Reddit Apps page](https://www.reddit.com/prefs/apps)
 
+To get an OpenAI API Key, please visit: [OpenAI User Settings](https://platform.openai.com/account/api-keys)
+
 ## Setup
-Before running the application, you may create a settings.json file inside api/app with your Reddit app credentials:
+Before running the application, you need to create a settings.json file inside api/app with your Reddit app credentials and OpenAI API Key:
 
 ```json
 {
     "ClientId": "<your-reddit-client-id>",
-    "ClientSecret": "<your-reddit-client-secret>"
+    "ClientSecret": "<your-reddit-client-secret>",
+    "OpenAIKey": "<your-openai-api-key>"
 }
 ```
 
+However, you don't have to do this manually, you can also just use the ```startup.sh``` script, which will guide you through the process.
+
 ## Running the Program
-You can start the Reddit User Analyzer using either the startup.sh script for a simplified setup, or by using Docker Compose directly for more control.
+You can start Tevuna Reddit using either the startup.sh script for a simplified setup, or by using Docker Compose directly for more control.
 
 ### Using the Startup Script
 Make the startup.sh script executable:
@@ -90,8 +111,33 @@ cd web_ui && docker-compose up --build
 ```
 
 ## Usage
-* Access the API at http://localhost:5000.
-* Access the Web UI at http://localhost:5090.
+* Access the Visual Overview API at http://localhost:5000 (replace "localhost" with your server address if deployed remotely).
+* Access the Bias Report API at http://localhost:5010 (replace "localhost" with your server address if deployed remotely).
+* Access the Web UI at http://localhost:5090 (replace "localhost" with your server address if deployed remotely).
+
+
+## Stopping the program
+
+Tevuna Reddit ensures a smooth and hassle-free termination process through multiple avenues. You may opt for the manual approach or leverage our automated script for a swift shutdown.
+
+### Manual Shutdown
+
+1. Navigate to the `/api` and `/web_ui` folders.
+2. Execute the following command to bring down the Docker containers:
+
+```bash
+docker compose down
+```
+
+### Automated Shutdown
+
+Alternatively, a simplified shutdown can be achieved by executing the shutdown.sh script provided:
+
+```bash
+./shutdown.sh
+```
+
+This streamlined script encapsulates the necessary commands to safely terminate the program, offering a hassle-free shutdown experience.
 
 ## Contributing
 Feel free to open issues or pull requests to contribute to this project.
