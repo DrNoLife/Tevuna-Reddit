@@ -23,16 +23,25 @@ EOL
     done
 }
 
-# Check if the settings.json file exists, if not, prompt user for Reddit credentials
-if [[ ! -f api/app/settings.json ]]; then
-    echo "settings.json not found. Generating one now..."
+# Check if the settings.json files exist in both new locations, if not, prompt user for credentials
+settings_exist=true
+for settings_path in ./api/bias_api/settings.json ./api/visual_api/settings.json
+do
+    if [[ ! -f "$settings_path" ]]; then
+        settings_exist=false
+        break
+    fi
+done
+
+if [[ "$settings_exist" == false ]]; then
+    echo "settings.json not found in one or both locations. Generating them now..."
     get_credentials
 else
-    echo "settings.json found."
+    echo "settings.json files found."
 fi
 
 # Start the API using Docker Compose
-echo "Starting API..."
+echo "Starting APIs..."
 (cd api && docker-compose up --build) &
 
 # Start the Web UI using Docker Compose
