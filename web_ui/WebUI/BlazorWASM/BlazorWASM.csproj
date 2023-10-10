@@ -7,10 +7,10 @@
     </PropertyGroup>
 
     <PropertyGroup>
-	    <!--<BlazorEnableTimeZoneSupport>false</BlazorEnableTimeZoneSupport>
+	    <BlazorEnableTimeZoneSupport>false</BlazorEnableTimeZoneSupport>
 	    <BlazorWebAssemblyPreserveCollationData>false</BlazorWebAssemblyPreserveCollationData>
 		<PublishTrimmed>true</PublishTrimmed>
-		<BlazorWasmPrerenderingDeleteLoadingContents>true</BlazorWasmPrerenderingDeleteLoadingContents>-->
+		<BlazorWasmPrerenderingDeleteLoadingContents>true</BlazorWasmPrerenderingDeleteLoadingContents>
     </PropertyGroup>
 
   <ItemGroup>
