@@ -26,7 +26,7 @@ EOL
 # Check if the settings.json file exists, if not, prompt user for Reddit credentials
 if [[ ! -f api/app/settings.json ]]; then
     echo "settings.json not found. Generating one now..."
-    get_reddit_credentials
+    get_credentials
 else
     echo "settings.json found."
 fi
