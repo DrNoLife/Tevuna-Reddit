@@ -139,6 +139,7 @@ button[type="submit"][b-8iuexwchvb] {
 
     .content-container .image-container[b-i4isjc398o] {
         flex: 5;
+        overflow-y: scroll;
     }
 
 .user[b-i4isjc398o] {
@@ -218,7 +219,7 @@ button[type="submit"][b-8iuexwchvb] {
 
     .message-container .image-container[b-9xcqac9i98] {
         max-width: 250px;
-        overflow-y: scroll;
+        /*overflow-y: scroll;*/
         box-sizing: border-box;
     }
 

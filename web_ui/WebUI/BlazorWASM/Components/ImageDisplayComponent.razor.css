@@ -52,6 +52,7 @@
 
     .content-container .image-container {
         flex: 5;
+        overflow-y: scroll;
     }
 
 .user {

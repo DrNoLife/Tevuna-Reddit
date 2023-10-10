@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NIm0iudCnFZ8TDvVpRT2A45st4dB0GQunMbx2H+OTNtuksgESTwAHXgdQ2pIWidFkrPt8j62EWOQRXNLs+MdBw==",
+  "dgSpecHash": "XZkjwa15V8sM9GKPLOAcPeZDVylOBRjQjv9aj0lKDG/C0ImvO49KAfkfbh3qx/PjVgOTiKE877yfgTfa9VgO0w==",
   "success": true,
-  "projectFilePath": "E:\\Repositories\\reddit-user-analyser\\web_ui\\WebUI\\BlazorWASM\\BlazorWASM.csproj",
+  "projectFilePath": "E:\\Repositories\\Tevuna-Reddit\\web_ui\\WebUI\\BlazorWASM\\BlazorWASM.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lazyT\\.nuget\\packages\\blazorwasmprerendering.build\\3.1.0-preview.4\\blazorwasmprerendering.build.3.1.0-preview.4.nupkg.sha512",
     "C:\\Users\\lazyT\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.11\\microsoft.aspnetcore.authorization.7.0.11.nupkg.sha512",

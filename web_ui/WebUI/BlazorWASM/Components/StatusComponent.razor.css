@@ -9,7 +9,7 @@
 
     .message-container .image-container {
         max-width: 250px;
-        overflow-y: scroll;
+        /*overflow-y: scroll;*/
         box-sizing: border-box;
     }
 

@@ -52,6 +52,7 @@
 
     .content-container .image-container[b-i4isjc398o] {
         flex: 5;
+        overflow-y: scroll;
     }
 
 .user[b-i4isjc398o] {
