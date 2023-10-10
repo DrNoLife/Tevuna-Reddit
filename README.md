@@ -35,6 +35,8 @@ For a more full walkthrough, checkout the `./docs/videos` folder for a video sho
 
 https://github.com/DrNoLife/Tevuna-Reddit/assets/17468135/e1548887-8b7d-4b3a-a2c7-5dcd88f653b7
 
+***Note**: Usernames used in the showcase are found at random. I visited a random post I saw on `r/Denmark` and just used the first name I found.*
+
 ### APIs
 
 In Tevuna Reddit there are 2 APIs included. One for retrieving the graphical overview of a user, and one for retrieving the bias report. Here's an overview of each:
