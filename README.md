@@ -56,6 +56,8 @@ Tevuna Reddit also includes a Web UI that makes the program easy to interact wit
 
 It's written in C# using Blazor Wasm. It's located in the ```web_ui``` folder.
 
+Default port is: ```5090```
+
 ## Previous Version
 The predecessor of this repository was solely focused on a Jupyter Notebook implementation. All relevant details regarding that version are preserved in the README file within the notebook directory, ensuring a seamless reference for those interested in the prior iteration.
 
