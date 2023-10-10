@@ -29,10 +29,11 @@ Tevuna Reddit includes the following:
 
 ### Showcase
 
-The following video shows how to use the program. Starts out from the Web UI and shows searching and result. For a more full walkthrough, checkout the `docs` folder for a video showing how to use the startup script to run Tevuna Reddit.
+The following video shows how to use the program. Starts out from the Web UI and shows searching and result. 
 
-https://github.com/DrNoLife/Tevuna-Reddit/blob/main/docs/videos/tevuna_showcase_compressed.mp4
+For a more full walkthrough, checkout the `./docs/videos` folder for a video showing how to use the startup script to run Tevuna Reddit.
 
+https://github.com/DrNoLife/Tevuna-Reddit/assets/17468135/e1548887-8b7d-4b3a-a2c7-5dcd88f653b7
 
 ### APIs
 
