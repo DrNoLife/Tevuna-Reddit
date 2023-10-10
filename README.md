@@ -132,8 +132,10 @@ docker compose down
 ### Automated Shutdown
 
 Alternatively, a simplified shutdown can be achieved by executing the shutdown.sh script provided:
+Make the startup.sh script executable:
 
 ```bash
+chmod +x shutdown.sh
 ./shutdown.sh
 ```
 
