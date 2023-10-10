@@ -45,6 +45,9 @@
         font-size: 1rem;
         line-height: 1.2;
         overflow: scroll;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
     }
 
     .content-container .image-container {
@@ -83,6 +86,7 @@
     .image-section {
         margin-top: 25px;
         gap: 25px;
+        flex-direction: column;
     }
 
     section > div {
@@ -92,5 +96,26 @@
     section > div:nth-child(even) {
         background-color: var(--secondary-bg-color);
         border-radius: 10px;
+    }
+
+    .user-history {
+        overflow: initial;
+    }
+
+    .content-container {
+        flex-direction: column;
+        /*overflow-y: scroll;*/
+    }
+
+    .content-container .image-container {
+        max-height: initial;
+        height: initial;
+        flex: initial;
+    }
+
+    .content-container article {
+        overflow: initial;
+        font-size: 1.2rem;
+        line-height: 1.35;
     }
 }

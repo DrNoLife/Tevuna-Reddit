@@ -50,7 +50,7 @@ public partial class FormComponent
         };
     }
 
-    private async Task HandleValidSubmit()
+    private async void HandleValidSubmit()
     {
         try
         {
@@ -61,16 +61,19 @@ public partial class FormComponent
             _status = "Retrieving comment and post history.";
             _statusComponent.StartMessageLoop(5000);
 
-            // Start the tasks.
-            Task<byte[]?> imageTask = AnalyserService.GetVisualAnalysisAsync(_analyseRequest);
-            Task<BiasReport> reportTask = AnalyserService.GetBiasReportAsync(_analyseRequest);
+            //// Start the tasks.
+            //Task<byte[]?> imageTask = AnalyserService.GetVisualAnalysisAsync(_analyseRequest);
+            //Task<BiasReport> reportTask = AnalyserService.GetBiasReportAsync(_analyseRequest);
 
-            // Await both tasks to complete.
-            await Task.WhenAll(imageTask, reportTask);
+            //// Await both tasks to complete.
+            //await Task.WhenAll(imageTask, reportTask);
 
-            // Get the results.
-            byte[]? imageBytes = imageTask.Result;
-            BiasReport report = reportTask.Result;
+            //// Get the results.
+            //byte[]? imageBytes = imageTask.Result;
+            //BiasReport report = reportTask.Result;
+
+            byte[]? imageBytes = await AnalyserService.GetVisualAnalysisAsync(_analyseRequest);
+            BiasReport report = await AnalyserService.GetBiasReportAsync(_analyseRequest);
 
             if (imageBytes is null)
             {

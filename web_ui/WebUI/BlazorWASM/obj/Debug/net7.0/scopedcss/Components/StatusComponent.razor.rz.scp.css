@@ -5,11 +5,12 @@
     flex: 1;
     justify-content: center;
     align-items: center;
-    min-height: 100%;
 }
 
     .message-container .image-container[b-9xcqac9i98] {
         max-width: 250px;
+        overflow-y: scroll;
+        box-sizing: border-box;
     }
 
 .message[b-9xcqac9i98] {

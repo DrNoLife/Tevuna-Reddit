@@ -1,4 +1,7 @@
+E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\wwwroot\_framework\blazor.boot.json
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\wwwroot\_framework\blazor.webassembly.js
+E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\wwwroot\_framework\BlazorWASM.dll
+E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\wwwroot\_framework\BlazorWASM.pdb
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\wwwroot\_framework\dotnet.7.0.10.brnhv1ujmu.js
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\wwwroot\_framework\dotnet.wasm
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\wwwroot\_framework\icudt.dat
@@ -197,9 +200,6 @@ E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\ww
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\wwwroot\_framework\System.Xml.XPath.dll
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\wwwroot\_framework\System.Xml.XPath.XDocument.dll
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\wwwroot\_framework\WindowsBase.dll
-E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\wwwroot\_framework\blazor.boot.json
-E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\wwwroot\_framework\BlazorWASM.dll
-E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\wwwroot\_framework\BlazorWASM.pdb
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\wwwroot\_framework\System.Diagnostics.Debug.dll.gz
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\wwwroot\_framework\Microsoft.Extensions.Configuration.Abstractions.dll.gz
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\wwwroot\_framework\System.Resources.Reader.dll.gz
@@ -831,3 +831,7 @@ E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\obj\Debug\net7.0\Bl
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\obj\Debug\net7.0\refint\BlazorWASM.dll
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\obj\Debug\net7.0\BlazorWASM.pdb
 E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\obj\Debug\net7.0\ref\BlazorWASM.dll
+E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\wwwroot\_framework\dotnet.timezones.blat
+E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\wwwroot\_framework\dotnet.timezones.blat.gz
+E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\bin\Debug\net7.0\dotnet.timezones.blat
+E:\Repositories\reddit-user-analyser\web_ui\WebUI\BlazorWASM\obj\Debug\net7.0\build-gz\b00DhKfR.gz

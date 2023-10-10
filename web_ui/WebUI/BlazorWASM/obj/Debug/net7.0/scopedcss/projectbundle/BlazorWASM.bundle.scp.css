@@ -132,6 +132,9 @@ button[type="submit"][b-8iuexwchvb] {
         font-size: 1rem;
         line-height: 1.2;
         overflow: scroll;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
     }
 
     .content-container .image-container[b-i4isjc398o] {
@@ -170,6 +173,7 @@ button[type="submit"][b-8iuexwchvb] {
     .image-section[b-i4isjc398o] {
         margin-top: 25px;
         gap: 25px;
+        flex-direction: column;
     }
 
     section > div[b-i4isjc398o] {
@@ -180,6 +184,27 @@ button[type="submit"][b-8iuexwchvb] {
         background-color: var(--secondary-bg-color);
         border-radius: 10px;
     }
+
+    .user-history[b-i4isjc398o] {
+        overflow: initial;
+    }
+
+    .content-container[b-i4isjc398o] {
+        flex-direction: column;
+        /*overflow-y: scroll;*/
+    }
+
+    .content-container .image-container[b-i4isjc398o] {
+        max-height: initial;
+        height: initial;
+        flex: initial;
+    }
+
+    .content-container article[b-i4isjc398o] {
+        overflow: initial;
+        font-size: 1.2rem;
+        line-height: 1.35;
+    }
 }
 /* /Components/StatusComponent.razor.rz.scp.css */
 
@@ -189,11 +214,12 @@ button[type="submit"][b-8iuexwchvb] {
     flex: 1;
     justify-content: center;
     align-items: center;
-    min-height: 100%;
 }
 
     .message-container .image-container[b-9xcqac9i98] {
         max-width: 250px;
+        overflow-y: scroll;
+        box-sizing: border-box;
     }
 
 .message[b-9xcqac9i98] {

@@ -19,7 +19,12 @@ body, #app, main {
     overflow: hidden !important;
 }
 
-
+@media only screen and (max-width : 400px) {
+    body, #app, main {
+        height: auto !important;
+        overflow: initial !important;
+    }
+}
 /* ===== Scrollbar CSS ===== */
 /* Firefox */
 * {

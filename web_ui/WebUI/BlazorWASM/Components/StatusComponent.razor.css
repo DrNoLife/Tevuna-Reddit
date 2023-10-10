@@ -5,11 +5,12 @@
     flex: 1;
     justify-content: center;
     align-items: center;
-    min-height: 100%;
 }
 
     .message-container .image-container {
         max-width: 250px;
+        overflow-y: scroll;
+        box-sizing: border-box;
     }
 
 .message {

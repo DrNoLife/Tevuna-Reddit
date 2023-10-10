@@ -19,6 +19,17 @@ public partial class ImageDisplayComponent
         _selectedUser = null;
     }
 
+    protected override void OnParametersSet()
+    {
+        var lastUserInList = AnalyzedUsers?.Last();
+        if(lastUserInList is null)
+        {
+            return;
+        }
+
+        _selectedUser = lastUserInList;
+    }
+
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         await ScrollToElement("image-section");

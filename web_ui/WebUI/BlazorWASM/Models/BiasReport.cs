@@ -4,6 +4,15 @@ public class BiasReport
 {
     public string Username { get; set; }
     public string Analysis { get; set; }
+    public List<string> AnalysisParagraphs 
+    { 
+        get
+        {
+            var splitAnalysis = Analysis.Split('\n');
+            var nonEmptyRows = splitAnalysis.Where(x => !String.IsNullOrEmpty(x)).ToList();
+            return nonEmptyRows;
+        }
+    }
 
     public BiasReport()
     {

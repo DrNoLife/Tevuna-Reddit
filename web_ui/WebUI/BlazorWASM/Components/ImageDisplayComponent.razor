@@ -26,7 +26,11 @@
                 </div>
 
                 <article>
-                    <p>@_selectedUser.BiasReport.Analysis</p>
+                    @foreach(var paragraph in _selectedUser.BiasReport.AnalysisParagraphs)
+                    {
+                        <p>@paragraph</p>
+                    }
+                    @*<p>@_selectedUser.BiasReport.Analysis</p>*@
                 </article>
             }
 
