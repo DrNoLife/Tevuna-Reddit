@@ -9,8 +9,13 @@ public class AnalyserService : BaseService, IAnalyserService
     {
     }
 
-    public async Task<byte[]?> AnalyseUserAsync(AnalyseRequest request)
+    public async Task<byte[]?> GetVisualAnalysisAsync(AnalyseRequest request)
     {
-        return await GetByteArrayAsync($"get-user-activity?username={request.Username}");
+        return await GetByteArrayAsync($"get-user-activity?username={request.Username}", Apis.VisualApi);
+    }
+
+    public async Task<BiasReport> GetBiasReportAsync(AnalyseRequest request)
+    {
+        return await GetAsync<BiasReport>($"get-user-analysis?username={request.Username}", Apis.BiasReportApi) ?? throw new NullReferenceException();
     }
 }

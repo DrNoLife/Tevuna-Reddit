@@ -1,0 +1,121 @@
+
+.image-section[b-i4isjc398o] {
+    margin-top: 50px;
+    display: flex;
+    gap: 10px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.image-container[b-i4isjc398o] {
+    max-height: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+    .image-container img[b-i4isjc398o] {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
+.image-title[b-i4isjc398o] {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.user-history[b-i4isjc398o] {
+    flex: 1;
+    height: 100%;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.content-container[b-i4isjc398o] {
+    flex: 10;
+    display: flex;
+    gap: 15px;
+}
+
+    .content-container article[b-i4isjc398o] {
+        flex: 1;
+        font-size: 1rem;
+        line-height: 1.2;
+        overflow: scroll;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .content-container .image-container[b-i4isjc398o] {
+        flex: 5;
+    }
+
+.user[b-i4isjc398o] {
+    border: 1px solid var(--link-color-hover);
+    background-color: var(--link-color);
+    color: var(--link-font-color);
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+    .user p[b-i4isjc398o] {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .user:hover[b-i4isjc398o] {
+        background-color: var(--link-color-hover);
+        font-weight: bold;
+    }
+
+    .user.active[b-i4isjc398o] {
+        font-weight: bold;
+    }
+
+/* Smartphones (portrait) */
+@media only screen and (max-width : 400px) {
+    .image-section[b-i4isjc398o] {
+        margin-top: 25px;
+        gap: 25px;
+        flex-direction: column;
+    }
+
+    section > div[b-i4isjc398o] {
+        padding: 10px;
+    }
+
+    section > div:nth-child(even)[b-i4isjc398o] {
+        background-color: var(--secondary-bg-color);
+        border-radius: 10px;
+    }
+
+    .user-history[b-i4isjc398o] {
+        overflow: initial;
+    }
+
+    .content-container[b-i4isjc398o] {
+        flex-direction: column;
+        /*overflow-y: scroll;*/
+    }
+
+    .content-container .image-container[b-i4isjc398o] {
+        max-height: initial;
+        height: initial;
+        flex: initial;
+    }
+
+    .content-container article[b-i4isjc398o] {
+        overflow: initial;
+        font-size: 1.2rem;
+        line-height: 1.35;
+    }
+}
