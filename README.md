@@ -16,6 +16,8 @@ Tevuna Reddit is an insightful tool designed to delve into the activities and be
 * [Stopping the program](#stopping-the-program)
     + [Manual Shutdown](#manual-shutdown)
     + [Automated Shutdown](#automated-shutdown)
+* [Future Features](#future-features)
+    + [Big but not Planned Features](#big-but-not-planned-changes)
 * [Contributing](#contributing)
 
 
@@ -153,6 +155,26 @@ chmod +x shutdown.sh
 ```
 
 This streamlined script encapsulates the necessary commands to safely terminate the program, offering a hassle-free shutdown experience.
+
+## Future Features
+
+These are some of the enhancements I'm considering to improve the user experience and efficiency of the application.
+
+* **Caching via Local Storage**: Store user data for 24 hours to minimize API calls.
+* **Force-Refresh Button**: Manually update stored user data.
+* **Instant Display**: Show local storage data on page load for a quicker user experience.
+* **Incremental Data Display**: Show data as it arrives from each API, with a loading bar for pending information.
+
+### Big But Not Planned Changes 
+
+While these changes could significantly alter the project, they are not currently on the roadmap. They would offer more customization and ease of use, especially for hosted versions.
+
+* **Database Support**: Option to use a database for more robust data management.
+* **Custom API Keys**: Allow users to input their own Reddit and OpenAI API keys.
+* **OpenAI Optional**: Make OpenAI feature optional if only a Reddit API key is supplied.
+* **Database Caching**: Introduce server-side caching when a database is used.
+
+*Note:* These changes would enable users to benefit from a hosted solution while still using their own API keys. 
 
 ## Contributing
 Feel free to open issues or pull requests to contribute to this project.
