@@ -16,8 +16,8 @@ Tevuna Reddit is an insightful tool designed to delve into the activities and be
 * [Stopping the program](#stopping-the-program)
     + [Manual Shutdown](#manual-shutdown)
     + [Automated Shutdown](#automated-shutdown)
-* [Future Features](#future-features)
-    + [Big but not Planned Features](#big-but-not-planned-changes)
+* [Roadmap](#roadmap)
+    + [Potentiel Features, but no guarantee](#potentiel-features-but-no-guarantee)
 * [Contributing](#contributing)
 
 
@@ -156,7 +156,7 @@ chmod +x shutdown.sh
 
 This streamlined script encapsulates the necessary commands to safely terminate the program, offering a hassle-free shutdown experience.
 
-## Future Features
+## Roadmap
 
 These are some of the enhancements I'm considering to improve the user experience and efficiency of the application.
 
@@ -165,7 +165,7 @@ These are some of the enhancements I'm considering to improve the user experienc
 * **Instant Display**: Show local storage data on page load for a quicker user experience.
 * **Incremental Data Display**: Show data as it arrives from each API, with a loading bar for pending information.
 
-### Big But Not Planned Changes 
+### Potentiel Features, but no guarantee
 
 While these changes could significantly alter the project, they are not currently on the roadmap. They would offer more customization and ease of use, especially for hosted versions.
 
