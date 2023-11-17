@@ -8,25 +8,29 @@ var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.RootComponents.Add<App>("#app");
 builder.RootComponents.Add<HeadOutlet>("head::after");
 
-ConfigureServices(builder.Services, builder.HostEnvironment.BaseAddress);
+ConfigureServices(builder.Services, builder.HostEnvironment.BaseAddress, builder.Configuration);
 
-static void ConfigureServices(IServiceCollection services, string baseAddress)
+static void ConfigureServices(IServiceCollection services, string baseAddress, IConfiguration configuration)
 {
-    services.AddHttpClient("RUA-Visual", client =>
+    string visualApiBaseAddress = configuration["Tevuna:VisualApi"] ?? "http://localddddhost:5000/";
+    string biasApiBaseAddress = configuration["Tevuna:BiasApi"] ?? "http://localddddhost:5010/";
+
+    Console.WriteLine($"{nameof(visualApiBaseAddress)} - {visualApiBaseAddress} - {new Uri(visualApiBaseAddress)}");
+    Console.WriteLine($"{nameof(biasApiBaseAddress)} - {biasApiBaseAddress} - {new Uri(biasApiBaseAddress)}");
+
+    services.AddHttpClient("Tevuna-Visual", client =>
     {
-        client.BaseAddress = new Uri("http://localhost:5000/");
+        client.BaseAddress = new Uri(visualApiBaseAddress);
     });
 
-    services.AddHttpClient("RUA-Bias", client =>
+    services.AddHttpClient("Tevuna-Bias", client =>
     {
-        client.BaseAddress = new Uri("http://localhost:5010/");
+        client.BaseAddress = new Uri(biasApiBaseAddress);
     });
 
     services.AddScoped<IBaseService, BaseService>();
     services.AddScoped<IAnalyserService, AnalyserService>();
     services.AddSingleton<IStateService, StateService>();
 }
-
-
 
 await builder.Build().RunAsync();

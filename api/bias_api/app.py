@@ -3,7 +3,7 @@ from flask import Flask, jsonify, request, send_file, g
 from flask_cors import CORS
 import logging
 from reddit import Reddit
-from open_ai import OpenAI
+from open_ai import OpenAIWrapper
 
 logging.basicConfig(level=logging.DEBUG)
 
@@ -22,8 +22,8 @@ def get_user_activity():
     reddit_data = reddit_client.fetch_comments(username)
    
     # 2. Get analysis by Gippity.
-    openai_client = OpenAI(settings.open_ai_key)
-    analysis = openai_client.analyze_comments(reddit_data)
+    openai_wrapper = OpenAIWrapper(settings.open_ai_key)
+    analysis = openai_wrapper.analyze_comments(reddit_data)
     
     # 3. Return the analysis.
     return {

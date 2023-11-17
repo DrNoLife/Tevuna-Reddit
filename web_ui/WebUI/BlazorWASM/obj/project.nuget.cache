@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "1yA/utjNzZL+ADal5BCEc/43GN7AhOoaujQ6S1/GjfLpSWdK6tadVoOqoEgLDGH04PymhTKYujhSLXz4d4fNcA==",
+  "dgSpecHash": "WvzG/Kjd1BKaXPXWEX/cVFLd4Cvlb/8r+969DuBm69Yq+kTaIk4zkI6ii490SkmEGOBISJQ4pjS4iFdwMuKEKg==",
   "success": true,
   "projectFilePath": "E:\\Repositories\\Tevuna-Reddit\\web_ui\\WebUI\\BlazorWASM\\BlazorWASM.csproj",
   "expectedPackageFiles": [
@@ -32,14 +32,11 @@
     "C:\\Users\\lazyT\\.nuget\\packages\\microsoft.jsinterop.webassembly\\7.0.11\\microsoft.jsinterop.webassembly.7.0.11.nupkg.sha512",
     "C:\\Users\\lazyT\\.nuget\\packages\\microsoft.net.illink.analyzers\\7.0.100-1.23211.1\\microsoft.net.illink.analyzers.7.0.100-1.23211.1.nupkg.sha512",
     "C:\\Users\\lazyT\\.nuget\\packages\\microsoft.net.illink.tasks\\7.0.100-1.23211.1\\microsoft.net.illink.tasks.7.0.100-1.23211.1.nupkg.sha512",
-    "C:\\Users\\lazyT\\.nuget\\packages\\microsoft.net.sdk.webassembly.pack\\8.0.0-rc.1.23419.4\\microsoft.net.sdk.webassembly.pack.8.0.0-rc.1.23419.4.nupkg.sha512",
+    "C:\\Users\\lazyT\\.nuget\\packages\\microsoft.net.sdk.webassembly.pack\\8.0.0\\microsoft.net.sdk.webassembly.pack.8.0.0.nupkg.sha512",
     "C:\\Users\\lazyT\\.nuget\\packages\\system.io.pipelines\\7.0.0\\system.io.pipelines.7.0.0.nupkg.sha512",
     "C:\\Users\\lazyT\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
     "C:\\Users\\lazyT\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
-    "C:\\Users\\lazyT\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.11\\microsoft.windowsdesktop.app.ref.7.0.11.nupkg.sha512",
-    "C:\\Users\\lazyT\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.11\\microsoft.netcore.app.ref.7.0.11.nupkg.sha512",
-    "C:\\Users\\lazyT\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.11\\microsoft.aspnetcore.app.ref.7.0.11.nupkg.sha512",
-    "C:\\Users\\lazyT\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.11\\microsoft.netcore.app.runtime.mono.browser-wasm.7.0.11.nupkg.sha512"
+    "C:\\Users\\lazyT\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.14\\microsoft.netcore.app.runtime.mono.browser-wasm.7.0.14.nupkg.sha512"
   ],
   "logs": []
 }

@@ -2,20 +2,20 @@ version: '3'
 
 services:
 
-  reddit-activity-visual-api:
+  tevuna-visual:
     build: 
       context: ./visual_api
       dockerfile: Dockerfile
-    container_name: "rua-visual-api"
+    container_name: "tevuna-visual-api"
     ports:
       - "5000:80"
     restart: unless-stopped
 
-  reddit-activity-analysis-api:
+  tevuna-analysis:
     build:
       context: ./bias_api
       dockerfile: Dockerfile
-    container_name: "rua-bias-api"
+    container_name: "tevuna-bias-api"
     ports:
       - "5010:80"
     restart: unless-stopped

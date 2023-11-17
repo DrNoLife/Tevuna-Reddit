@@ -25,6 +25,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Update="wwwroot\appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Update="wwwroot\images\hu_tao_gotcha.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

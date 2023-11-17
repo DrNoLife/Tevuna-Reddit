@@ -1,6 +1,8 @@
 # Build the Blazor app
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
+
 WORKDIR /src
+
 COPY ["./WebUI/BlazorWASM/BlazorWASM.csproj", "WebUI/BlazorWASM/"]
 RUN dotnet restore "WebUI/BlazorWASM/BlazorWASM.csproj"
 COPY . .

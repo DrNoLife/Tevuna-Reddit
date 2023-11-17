@@ -51,8 +51,8 @@ public class BaseService : IBaseService
     {
         HttpClient client = api switch
         {
-            Apis.VisualApi => _httpClientFactory.CreateClient("RUA-Visual"),
-            Apis.BiasReportApi => _httpClientFactory.CreateClient("RUA-Bias"),
+            Apis.VisualApi => _httpClientFactory.CreateClient("Tevuna-Visual"),
+            Apis.BiasReportApi => _httpClientFactory.CreateClient("Tevuna-Bias"),
             _ => throw new NotImplementedException()
         };
 

@@ -72,9 +72,6 @@ public partial class FormComponent
             byte[]? imageBytes = imageTask.Result;
             BiasReport report = reportTask.Result;
 
-            //byte[]? imageBytes = await AnalyserService.GetVisualAnalysisAsync(_analyseRequest);
-            //BiasReport report = await AnalyserService.GetBiasReportAsync(_analyseRequest);
-
             if (imageBytes is null)
             {
                 _errorHappened = true;
