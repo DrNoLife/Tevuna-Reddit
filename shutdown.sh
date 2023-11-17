@@ -4,7 +4,7 @@
 stop_docker_compose() {
     local dir=$1
     echo "Stopping Docker Compose project in $dir..."
-    (cd "$dir" && docker-compose down)
+    (cd "$dir" && sudo docker-compose down)
 }
 
 # Stop the API Docker Compose project

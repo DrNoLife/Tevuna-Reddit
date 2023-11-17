@@ -42,8 +42,8 @@ fi
 
 # Start the API using Docker Compose
 echo "Starting APIs..."
-(cd api && docker-compose up --build) &
+(cd api && sudo docker compose up --build) &
 
 # Start the Web UI using Docker Compose
 echo "Starting Web UI..."
-(cd web_ui && docker-compose up --build) &
+(cd web_ui && sudo docker compose up --build) &
