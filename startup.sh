@@ -40,9 +40,6 @@ else
     echo "settings.json files found."
 fi
 
-# Creating docker network
-docker network create tevunanetwork
-
 # Start the API using Docker Compose
 echo "Starting APIs..."
 (cd api && docker-compose up --build) &
