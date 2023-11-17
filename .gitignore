@@ -163,7 +163,7 @@ cython_debug/
 settings.json
 
 # Ignore all .json files in the root directory
-*.json
+/*.json
 
 # Ignore the "diagrams" folder
 diagrams/
